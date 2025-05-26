@@ -64,15 +64,15 @@ public class MorseCodeGUI {
             for (char ch : morseCode.toCharArray()) {
                 switch (ch) {
                     case '.':
-                        beep(800, 100); // dot
+                        playSound("resources/dot.wav");
                         sleep(100);
                         break;
                     case '-':
-                        beep(800, 300); // dash
+                        playSound("resources/dash.wav");
                         sleep(100);
                         break;
                     case ' ':
-                        sleep(200); // space between characters
+                        sleep(200); // space between letters
                         break;
                     case '/':
                         sleep(400); // pause between words
@@ -83,20 +83,14 @@ public class MorseCodeGUI {
         executor.shutdown();
     }
 
-    private static void beep(int hz, int durationMs) {
-        float sampleRate = 44100;
-        byte[] buf = new byte[1];
-        AudioFormat af = new AudioFormat(sampleRate, 8, 1, true, false);
-        try (SourceDataLine sdl = AudioSystem.getSourceDataLine(af)) {
-            sdl.open(af);
-            sdl.start();
-            for (int i = 0; i < durationMs * (sampleRate / 1000); i++) {
-                double angle = i / (sampleRate / hz) * 2.0 * Math.PI;
-                buf[0] = (byte) (Math.sin(angle) * 127);
-                sdl.write(buf, 0, 1);
-            }
-            sdl.drain();
-            sdl.stop();
+    private static void playSound(String soundFile) {
+        try {
+            AudioInputStream audioIn = AudioSystem.getAudioInputStream(new java.io.File(soundFile));
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioIn);
+            clip.start();
+            Thread.sleep(clip.getMicrosecondLength() / 1000);
+            clip.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
