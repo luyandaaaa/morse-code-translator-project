@@ -1,4 +1,4 @@
-package morse;
+package src.morse;
 import java.util.*;
 
 public class MorseCodeMap {
