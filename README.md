@@ -1,7 +1,7 @@
 # 📡 R2-D2 Morse Code Translator ✨
 
 ![Java](https://img.shields.io/badge/Java-17%2B-blue?logo=java)
-![License](https://img.shields.io/github/license/yourusername/morse-translator)
+![License](https://img.shields.io/github/license/luyandaaaa/morse-code-translator-project)
 ![GUI Screenshot](CLI.png)
 ![CLI Screenshot](GUI.png)
 
