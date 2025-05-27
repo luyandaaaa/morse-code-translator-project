@@ -1,4 +1,4 @@
-package morse;
+package src.morse;
 
 public class MorseCodeTranslator {
 
