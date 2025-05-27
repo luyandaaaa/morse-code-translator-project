@@ -4,8 +4,10 @@ A dual-interface Morse code translation tool with both graphical (GUI) and comma
 
 ![Java](https://img.shields.io/badge/Java-17%2B-blue?logo=java)
 [![License: MIT](https://img.shields.io/github/license/luyandaaaa/morse-code-translator-project)](https://github.com/luyandaaaa/morse-code-translator-project?tab=MIT-1-ov-file)
-![CLI Screenshot](GUI.png)
-![GUI Screenshot](CLI.png)
+
+<img src="GUI.png" alt="GUI Screenshot" width="400"/> 
+<img src="CLI.png" alt="CLI Screenshot" width="400"/>
+
 
 
 
