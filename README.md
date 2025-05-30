@@ -68,7 +68,7 @@ morse-translator/
    ```
 2. Navigate to the project directory:
    ```
-   cd morse-translator
+   cd morse-code-translator-project
    ```
 ## GUI Features
 - Modern Dark Theme with space-inspired color scheme
