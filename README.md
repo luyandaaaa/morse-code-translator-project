@@ -64,7 +64,7 @@ morse-translator/
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/morse-translator.git
+   git clone https://github.com/luyandaaaa/morse-code-translator-project.git
    ```
 2. Navigate to the project directory:
    ```
