@@ -71,7 +71,7 @@ morse-translator/
    ```
    cd morse-code-translator-project
    ```
-## GUI Features
+## 🌟 GUI Features
 - Modern Dark Theme with space-inspired color scheme
 
 - Real-time Translation between text and Morse code
@@ -80,7 +80,7 @@ morse-translator/
 
 - Interactive Elements with hover effects
 
-## CLI Features
+## 🌟 CLI Features
 - Colorful Terminal Output with ANSI colors
 
 - Interactive Menus with clear navigation
