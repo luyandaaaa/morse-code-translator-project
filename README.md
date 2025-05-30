@@ -3,6 +3,7 @@
 A dual-interface Morse code translation tool with both graphical (GUI) and command-line (CLI) interfaces, featuring text-to-Morse and Morse-to-text conversion with audio playback capabilities.
 
 ![Java](https://img.shields.io/badge/Java-17%2B-blue?logo=java)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![GUI Screenshot](GUI.png)
 ![CLI Screenshot](CLI.png)
